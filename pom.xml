@@ -3,6 +3,24 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>ch.hearc.ig.sda</groupId>
     <artifactId>Personne</artifactId>
-    <version>Serie 2</version>
+    <version>Serie2</version>
     <packaging>jar</packaging>
+	<build>
+		<sourceDirectory>${basedir}/src</sourceDirectory>
+		 <plugins>
+		  <plugin>
+		   <!-- Build an executable JAR -->
+		   <groupId>org.apache.maven.plugins</groupId>
+		   <artifactId>maven-jar-plugin</artifactId>
+		   <version>2.4</version>
+		   <configuration>
+			<archive>
+			 <manifest>
+			  <mainClass>ch.hearc.ig.sda.personne.MesPersonnes</mainClass>
+			 </manifest>
+			</archive>
+		   </configuration>
+		  </plugin>
+		 </plugins>
+	</build>
 </project>
