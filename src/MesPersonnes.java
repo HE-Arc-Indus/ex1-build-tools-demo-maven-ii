@@ -15,8 +15,8 @@ public class MesPersonnes {
         
         Personne personne = new Personne();
         Personne pe = new Personne();
-        personne.setNom("Eichi");
-        personne.setPrenom("Odile");
+        personne.setNom(" John ");
+        personne.setPrenom(" Doe ");
         personne.sePresenter();
     }
 }
